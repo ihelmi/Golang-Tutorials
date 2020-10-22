@@ -84,7 +84,7 @@ func dateUpdate(w http.ResponseWriter, r *http.Request) {
 	json.NewEncoder(w).Encode(Output)
 }
 
-/*Split Function to split each intervals into h,m,sassuimg that the pattern of each interval is h,m,s respectively*/
+//Split Function to split each intervals into h,m,sassuimg that the pattern of each interval is h,m,s respectively
 func Split(r rune) bool {
 	return r == 'h' || r == 'm' || r == 's'
 }

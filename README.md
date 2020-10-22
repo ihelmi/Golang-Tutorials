@@ -1,4 +1,4 @@
-# Golang-Tutorials
+# Tutorial Description
 
 This is a simple web service that accepts the below mentioned JSON at a URL (`/date/update`) and updates the date according the JSON content (`intervals`).
 
@@ -32,3 +32,14 @@ The `start_date` will be updated based on the `intervals` content, and the web s
     ]
 }
 ```
+
+# Test the code
+
+Execute the code first:
+`go run webservice.go`
+
+Then in the terminal:
+`curl -s -XPOST -d'{"start_date": "2020-09-20T15:45:00Z","intervals":["20h","140h25s","40m"]}' http://localhost:8000/date/update`  
+
+# Note
+This code was tested and executed successfully on MacOS.
